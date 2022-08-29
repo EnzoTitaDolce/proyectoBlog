@@ -1,0 +1,16 @@
+embed{
+    height: 86vh;
+    width:80%;
+}
+.contenedor{
+    position:absolute;
+}
+.pdf{
+    position:relative;
+}
+.bloqueo{
+    position:relative;
+    background-color:rgba(255,255,255,0.00);
+    width:830px;
+    height:850px;
+}

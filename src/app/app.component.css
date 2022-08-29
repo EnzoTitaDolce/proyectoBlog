@@ -1,0 +1,38 @@
+body{
+    background-color: #004173;
+    height: 100%;    
+}
+.componente{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    padding:0;    
+    width:100vw;
+    height: 3vh;
+    background-color: #7cdaf9;
+}
+#encabezado{
+    position: fixed;
+    top: 0;
+    height: 5vh;
+}
+#navegadora{
+    position: fixed;
+    top:5vh;
+    width:100%;
+}
+#contenido{
+    position:relative;
+    top: 11vh;
+    color:white;
+    text-align: center;
+    height: calc(100vh-3.5rem);    
+}
+#aside, #aside2{    
+    color:white;
+    height: 100vh-3.5rem;
+}
+#principal{    
+    height: 87vh;
+}
+
