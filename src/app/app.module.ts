@@ -13,6 +13,7 @@ import { CalculoAreasComponent } from './calculo-areas/calculo-areas.component';
 import { EcuacionesDifComponent } from './ecuaciones-dif/ecuaciones-dif.component';
 import { MatricesComponent } from './matrices/matrices.component';
 import { SistemasEcuacionesComponent } from './sistemas-ecuaciones/sistemas-ecuaciones.component';
+import { AsideComponent } from './aside/aside.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SistemasEcuacionesComponent } from './sistemas-ecuaciones/sistemas-ecua
     CalculoAreasComponent,
     EcuacionesDifComponent,
     MatricesComponent,
-    SistemasEcuacionesComponent
+    SistemasEcuacionesComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,

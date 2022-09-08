@@ -13,14 +13,7 @@ export class EncabezadoComponent implements OnInit {
     
   }
 
-  clickDerecho(){
-
-    document.oncontextmenu=ev=>{
-      ev.preventDefault();
-      alert("No se permite el click derecho");
-    }
   
-  }
 
 }
 

@@ -1,7 +1,14 @@
 p{
-    background-color: #7cdaf9;
+    color:white;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bolder;
+   
     }
+
+div{
+    background: linear-gradient( #0616fd, #004173);
+    height: 3rem;
+    
+}

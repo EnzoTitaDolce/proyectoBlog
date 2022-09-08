@@ -1,35 +1,51 @@
-<body>
-<div id="encabezado" class="componente">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <app-encabezado></app-encabezado>
-      </div>      
-    </div>
+<body>  
+  <div id="encabezado" class="encabezado">
+    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-4 col-sm-2">
+      <app-encabezado></app-encabezado>
+    </div>      
   </div>
+  
+  
+<div id="contenedor-menu">
+  <button (click)="mostrarOcultar()">☰</button>
+  <!--<a href="#contenedor-menu" id="desplegar" style="color:white">☰</a>
+  <a href="#" id="ocultar">❌</a>-->
+      <nav class="barraNav" id="barraMenu">        
+        <!-- enlaces -->
+        <ul class="navBarLista" id="contenedor-enlaces" (click)="ocultar()">
+          <li >
+            <a routerLink="intindef">Integral Indefinida</a>
+          </li>
+          <li>
+            <a  routerLink="intdef">Integral Definida</a>
+          </li>
+          <li>
+            <a  routerLink="calcarea">Cálculo de Áreas</a>
+          </li>
+          <li>
+            <a  routerLink="ecdif">Ecuaciones Diferenciales</a>
+          </li>
+          <li>
+            <a  routerLink="matrices">Matrices</a>
+          </li>
+          <li>
+            <a  routerLink="sisecu">Sistema de Ecuaciones</a>
+          </li>
+        </ul>
+      </nav>
 </div>
-
-<app-nav-bar id="navegadora"></app-nav-bar>
-<div class="container-fluid" id="contenido">
-  <div class="row">
-    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2" id="aside">
-      Aside
-    </div>
-    <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8" id="principal">
+<div class="row">
+  <div id="contenido">
+    <app-aside id="aside">      
+    </app-aside>
+    <div  id="principal">
       <router-outlet></router-outlet>
     </div>
-    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2" id="aside2">
-      Aside
-    </div>
+    <app-aside id="aside2">      
+    </app-aside>
   </div>
-</div>
-<div id="footer" class="componente">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <app-footer></app-footer>
-      </div>      
+</div>  
+    <div id="footer" class="footer">        
+          <app-footer></app-footer>           
     </div>
-  </div>
-</div>
 </body>

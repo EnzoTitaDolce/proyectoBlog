@@ -14,12 +14,7 @@ export class IntegralDefinidaComponent implements OnInit {
    
   }
 
-  deshabilitarClick(){
-    document.oncontextmenu=ev=>{
-      ev.preventDefault();
-      alert("No se permite el click derecho");
-    }
-  }
+  
 
 }
 
