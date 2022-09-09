@@ -2,6 +2,13 @@
     padding: 0px;
     margin:0px
 }
+#footer{
+    position: fixed;
+    height: 4vh;
+    margin-bottom:-10px;
+    bottom:0px;        
+    width:100%;        
+}
 @media  screen and (max-width:480px) {
    .encabezado{
     position:relative;
@@ -15,7 +22,7 @@
         display:none;                
     }
     #contenedor-menu{
-        margin:10px;
+        margin:10px;        
     }
     #contenedor-enlaces{
         display: flex;
@@ -52,15 +59,8 @@
     }
     #barraMenu{
         display: none;
-        transition: display 2s ease-in-out;
     }
-    #footer{
-        position: fixed;
-        height: 4vh;
-        margin-bottom: -2px;
-        bottom:0px;        
-        width:100%;        
-    }
+    
 }    
     
     /*

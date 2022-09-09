@@ -8,7 +8,7 @@ p{
     }
 
 div{
-    background: linear-gradient( #0616fd, #004173);
+    background: linear-gradient( #004173,/*#0616fd,*/ whitesmoke);
     height: 3rem;
     
 }
