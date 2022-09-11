@@ -6,7 +6,7 @@ p{
     color:white;        
     }
     div{
-      background: linear-gradient(#006dc0, #004173 /*#0616fd,*/ );
+      background: linear-gradient(whitesmoke, #004173 /*#0616fd,*/ );
       width:100vw;
     }
     *{margin:0px;

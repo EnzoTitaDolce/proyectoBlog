@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +13,12 @@ import { EcuacionesDifComponent } from './ecuaciones-dif/ecuaciones-dif.componen
 import { MatricesComponent } from './matrices/matrices.component';
 import { SistemasEcuacionesComponent } from './sistemas-ecuaciones/sistemas-ecuaciones.component';
 import { AsideComponent } from './aside/aside.component';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
+
+const routerOptions: ExtraOptions = {
+  anchorScrolling: "enabled",
+  scrollPositionRestoration: 'enabled'
+}
 
 @NgModule({
   declarations: [
@@ -32,7 +37,7 @@ import { AsideComponent } from './aside/aside.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
