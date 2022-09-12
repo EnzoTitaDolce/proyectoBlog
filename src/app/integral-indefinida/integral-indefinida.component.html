@@ -1,11 +1,11 @@
 
 <nav>
    <ul>
-      <li><a href="/intindef/#intro">Instroducción</a></li>
-      <li><a href="/intindef/#inmediatas">Inmediatas</a></li>
-      <li><a href="/intindef/#sustitucion">Sustitución</a></li>
-      <li><a href="/intindef/#partes">Por Partes</a></li>
-      <li><a href="/intindef/#fracciones">Fracciones Simples</a></li>
+      <li><a routerLink="./" fragment="intro">Introducción</a></li>
+      <li><a routerLink="./" fragment="inmediatas">Inmediatas</a></li>
+      <li><a routerLink="./" fragment="sustitucion">Sustitución</a></li>
+      <li><a (click)="navegar('partes')">Por Partes</a></li>
+      <li><a (click)="navegar('fracciones')">Fracciones Simples</a></li>
    </ul>
 </nav>
 
@@ -18,9 +18,6 @@
    <div class="author" ><span 
    class="cmr-12x-x-120">Tita Dolce, E. G.</span></div><br />
    <div class="date" ><span 
-   class="cmr-12x-x-120">10</span><span 
-   class="cmr-12x-x-120">&#x00A0;de septiembre</span><span 
-   class="cmr-12x-x-120">&#x00A0;de</span><span 
    class="cmr-12x-x-120">&#x00A0;2022</span></div>
       </div><div 
    class="abstract" 
@@ -59,7 +56,7 @@
    class="cmr-10x-x-109">necesarias para calcularlas.</span>
    </div>
    
-      <h3 class="sectionHead"><span class="titlemark">1.</span><a name="intro"></a>Introducción</h3>
+      <h3 class="sectionHead"><span class="titlemark">1.</span><a id="intro"></a>Introducción</h3>
    
    <!--l. 19--><p class="noindent" >La integral <span 
    class="cmbx-12">indefinida </span>es la opuesta a la derivada. Es decir, si tenemos una
@@ -174,7 +171,7 @@
    F(x) es una primitiva y C es la constante de integración.
    <!--l. 69--><p class="noindent" >
       <h3 class="sectionHead"><span class="titlemark">2.   </span> <a 
-    id="x1-50002" name="inmediatas"></a>Métodos de Integración</h3>
+    id="x1-50002" id="inmediatas"></a>Métodos de Integración</h3>
    <!--l. 70--><p class="noindent" >Vamos a los que nos interesa... si tengo una función f, ¿cómo encuentro su primitiva?
    es decir, ¿cómo la integro?.
    

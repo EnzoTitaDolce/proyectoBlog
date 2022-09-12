@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-integral-indefinida',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntegralIndefinidaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private vps:ViewportScroller) { }
+
+  navegar(id:string) {
+    this.vps.scrollToAnchor(id);
+  }
 
   ngOnInit(): void {
   }
